@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="author" content="Bizapps">
+    <!-- link rel="icon" href="../../favicon.ico" -->
+
+    <title>Template Page</title>
+    <meta name="description" content="Bizapps template">
+
+    <!-- Core jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!-- Core W3.css -->
+    <link rel="stylesheet" href="/libs/w3/w3.css" type="text/css"/>
+
+    <!-- Javascript Date library-->
+    <script type="text/javascript" src="/scripts/moment.js"></script>
+
+    <!-- Javascript Main library-->
+
+    <script type="text/javascript" src="/scripts/Main.js"></script>
+    <!-- JXGrid libraries -->
+    <link rel="stylesheet" href="/libs/jqwidgets-ver4/jqwidgets/styles/jqx.base.css" type="text/css"/>
+    <link rel="stylesheet" href="/libs/jqwidgets-ver4/jqwidgets/styles/jqx.ui-start.css" type="text/css" />
+    <script type="text/javascript" src="/libs/jqwidgets-ver4/scripts/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/libs/jqwidgets-ver4/jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="/libs/jqwidgets-ver4/jqwidgets/jqxdata.js"></script>
+    <script type="text/javascript" src="/libs/jqwidgets-ver4/jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="/libs/jqwidgets-ver4/jqwidgets/jqxscrollbar.js"></script>
+    <script type="text/javascript" src="/libs/jqwidgets-ver4/jqwidgets/jqxmenu.js"></script>
+    <script type="text/javascript" src="/libs/jqwidgets-ver4/jqwidgets/jqxgrid.js"></script>
+    <script type="text/javascript" src="/libs/jqwidgets-ver4/jqwidgets/jqxgrid.edit.js"></script>
+    <script type="text/javascript" src="/libs/jqwidgets-ver4/jqwidgets/jqxgrid.sort.js"></script>
+    <script type="text/javascript" src="/libs/jqwidgets-ver4/jqwidgets/jqxgrid.filter.js"></script>
+    <script type="text/javascript" src="/libs/jqwidgets-ver4/jqwidgets/jqxgrid.selection.js"></script>
+    <script type="text/javascript" src="/libs/jqwidgets-ver4/jqwidgets/jqxgrid.pager.js"></script>
+    <script type="text/javascript" src="/libs/jqwidgets-ver4/jqwidgets/jqxgrid.columnsresize.js"></script>
+    <script type="text/javascript" src="/libs/jqwidgets-ver4/jqwidgets/jqxpanel.js"></script>
+    <script type="text/javascript" src="/libs/jqwidgets-ver4/jqwidgets/jqxcheckbox.js"></script>
+    <script type="text/javascript" src="/libs/jqwidgets-ver4/jqwidgets/jqxlistbox.js"></script>
+    <script type="text/javascript" src="/libs/jqwidgets-ver4/jqwidgets/jqxdropdownlist.js"></script>
+    <script type="text/javascript" src="/libs/jqwidgets-ver4/jqwidgets/jqxsplitter.js"></script>
+    <script type="text/javascript" src="/libs/jqwidgets-ver4/jqwidgets/jqxtabs.js"></script>
+    <script type="text/javascript" src="/libs/jqwidgets-ver4/jqwidgets/jqxpanel.js"></script>
+    <script type="text/javascript" src="/libs/jqwidgets-ver4/jqwidgets/jqxexpander.js"></script>
+    <script type="text/javascript" src="/libs/jqwidgets-ver4/jqwidgets/jqxgrid.aggregates.js"></script>
+    <script type="text/javascript" src="/libs/jqwidgets-ver4/scripts/demos.js"></script>
+
+
+    <!-- Main page css -->
+    <link rel="stylesheet" href="/css/Main.css" type="text/css"/>
+    <script>
+        var userName = '<%= user.username %>'
+        var GridTitle
+    </script>
+
+    <style>
+        <style type="text/css">
+        .jqx-grid-cell
+        {
+            border: none;
+        }
+        .jqx-splitter
+        {
+            border: none;
+        }
+        html, body
+        {
+            height: 100%;
+            width: 100%;
+            margin: 0px;
+            padding: 3px;
+            box-sizing: border-box;
+    </style>
+
+    </style>
+    </head>
+
+    <body class="w3-light-grey">
+    <div id="wrapper">
+    <!-- Begin Page-Header  -->
+    <div class="w3-row-padding w3-light-blue">
+    <div class="w3-half w3-padding-8">
+    <ul class="w3-navbar">
+    <li class="w3-dropdown-hover w3-light-grey w3-card-4 w3-center">
+    <a Id="aUserName"  name="userid" href="#"><%= user.username %></a>
+                                                                    <div class="w3-dropdown-content w3-light-grey w3-card-4 w3-center">
+    <a href="http://localhost:3002/logout">Sign out</a>
+                                                     </div>
+                                                       </li>
+                                                         </ul>
+                                                           </div>
+
+
+                                                             <div class="w3-half w3-right-align">
+    <h6><%=title%></h6>
+                    </div>
+    <!-- End Page-Header -->
+    </div>
+
+    <!--Alert-->
+        <tr><div class="alert">Error in sending Email Confirmation !</div></tr>
+
+
+
+    <!-- Begin Page -->
+
+
+    <!--Footer-->
+        <div class=<div class="w3-container w3-display-bottommiddle">
+    <div class="w3-row-padding w3-light-blue" style="margin-top:30px;">
+    <div class="w3-padding-8">
+    <div class="w3-half w3-right-align">
+    <h6>Support: bizapp@sfchronicle.com</h6> </div>
+    </div></div></div>
+
+
+
+    </div>
+
+
+    <!--  <div style="clear: both; font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif; font-size: 12px;">
+    <div style="margin-top: 10px;">
+    <span>Selected Row Index:</span> <span id="selectrowindex"></span>
+    <br />
+    <span>Save Selection:</span> <span id="getID2Save"></span>
+    </div>
+    </div>-->
+
+
+    <!-- Begin Inner Row 2 -->
+
+    <!--End Page  -->
+    <!-- Modal Dialogs -->
+
+
+    <!-- Custom Alert Message modal -->
+    <div id="MsgPanel" class="w3-sfc-modal">
+    <!-- Message Panel-->
+    <div Id="MsgPanelContainer" class="w3-modal-content w3-card-8 w3-display-middle">
+    <span style="display:inline-block;width:100%;background-color:lightgray;">
+    <span id="MsgPanelBtn" class="w3-closebtn">&times;</span>
+                                                        </span>
+                                                          <br/>
+    <span id="spnMsgPanelBody" class="w3-padding-small" style="display:inline-block;"></span>
+                                                                                        </div>
+    <!-- End Message Panel-->
+         </div>
+
+
+           </body>
+             </html>

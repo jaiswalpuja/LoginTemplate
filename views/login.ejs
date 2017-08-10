@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="UTF-8">
+	<title><%=title%></title>
+	<!-- Core W3.css -->
+	<link rel="stylesheet" href="/libs/w3/w3.css" type="text/css"/>
+	<link rel="stylesheet" href="/css/login.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+	<script type="text/javascript">
+
+        $(document).ready(function(){
+
+            $('#forgot').click(function(e) {
+                var inputvalue = $("#username").val();
+                window.location.replace(" http://localhost:3010/forgot/"+inputvalue);
+
+            });
+            $('#register').click(function(e) {
+                var inputvalue = $("#username").val();
+                window.location.replace(" http://localhost:3010/register/");
+
+            });
+        });
+	</script>
+</head>
+
+<body>
+<!-- show any messages that come back with authentication -->
+
+<div id="form-wrapper">
+	<form name="login-form"  id="form"   class="login-form" method="post">
+
+		<div class="header">
+            <% if (message.length > 0) { %>
+			<div class="alert alert-danger"><%= message %></div>
+            <% } %>
+		<h1> <div class="w3-display-container" style="height:50px;">
+				<div class="w3-display-topleft">Login</div>
+				<div class="w3-display-topright"><img src="/images/logo.png" class="w3-round" alt="CND"></div></div></h1>
+			<span>Please enter your credential:</span>
+		</div>
+
+		<div class="content">
+			<input name="username" id="username"required type="email" class="input username"
+            <% if (username.length > 0) { %>
+			value="<%= username %>"
+            <% } %>
+				   placeholder="username@domain" />
+			<div class="user-icon"></div>
+			<input name="password" required type="password" class="input password" placeholder="password"/>
+			<div class="pass-icon"></div>
+		</div>
+
+		<div class="footer">
+			<f1> <div class="w3-display-container" style="height:50px;">
+					<div class="w3-display-topright">
+						<button type="submit" value="login" class="button" onclick="this.form.action='/login';">Submit</button>
+					</div>
+				</div>
+			</f1>
+		</div>
+
+	</form>
+	<div class="w3-display-container" style="height:50px;">
+		<div class="w3-display-topright">
+			<p class="label">Forgot Password?</p>
+			<p><button type="submit"  class="button1" id="forgot" class="button">Forgot</button></p>
+		</div>
+		<div class="w3-display-topleft">
+			<p class="label">Need new account?</p>
+			<p><button type="submit"  class="button1" id="register" class="button">Register</button></p>
+		</div>
+</div>
+
+</body>
+</html>

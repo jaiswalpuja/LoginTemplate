@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title><%=title%></title>
+
+    <!-- Core jQuery library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="/libs/w3/w3.css" type="text/css"/>
+    <link rel="stylesheet" href="/css/registration.css">
+    <link rel="stylesheet" href="/css/login.css">
+
+
+</head>
+
+<body>
+<div id="form-wrapper">
+
+        <form name="registration" action="/register" method="post">
+            <div class="header">
+                <% if (message.length > 0) { %>
+                <div class="alert alert-danger"><%= message %></div>
+                <% } %>
+                <h1> <div class="w3-display-container" style="height:50px;">
+                        <div class="w3-display-topleft">Registration</div>
+                        <div class="w3-display-topright"><img src="/images/cnd_log_2inch.jpg" class="w3-round" alt="CND"></div></div></h1>
+                <span>Please enter your credential:</span>
+            </div>
+            <div class="content">
+                <label for="username">Email</label>
+                <input class="input username" name="username" type="email" required/>
+                <label for="password">Password</label>
+                <input class="input password" name="password" id="password" type="password" required/>
+
+            <ul class="helper-text">
+                <li class="length">Must be at least 8 characters long.</li>
+                <li class="lowercase">Must contain a lowercase letter.</li>
+                <li class="uppercase">Must contain an uppercase letter.</li>
+                <li class="special">Must contain a number or special character.</li>
+            </ul>
+                <label for="confirm">Confirm Password</label>
+                <input class="password" name="confirm" id="confirm" type="password" required/>
+                <label for="question">Please select a secret question:</label>
+                   <select id="question" name="question" type="email" value="Select ....">
+                        <option>Your city of birth?</option>
+                        <option>Month your mom was born?</option>
+                        <option>What was your favorite place to visit as child?</option>
+                        <option>What was the first live concert you attended?</option>
+                </select>
+                <label for="answer">Answer:</label>
+                <input class="input username" name="answer" id="answer" type="text" required/>
+
+            </div>
+            <div class="footer">
+                <button type="submit" class="button">Submit</button>
+            </div>
+        </form>
+<br>
+    <p class="label">Already have an account? <a href="/">Login</a></p>
+</div>
+<script type="text/javascript" src="/libs/jqwidgets-ver4/scripts/jquery-1.11.1.min.js"></script>
+<script src="/scripts/login.js"></script>
+</body>
+</html>

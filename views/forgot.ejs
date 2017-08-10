@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title><%=title%></title>
+
+    <!-- Core jQuery library -->
+    <link rel="stylesheet" href="/libs/w3/w3.css" type="text/css"/>
+    <link rel="stylesheet" href="/css/registration.css">
+    <link rel="stylesheet" href="/css/login.css">
+
+</head>
+
+<body>
+<div id="form-wrapper">
+
+    <form name="forgot"  action="/forgot"  method="post">
+        <div class="header">
+            <% if (message.length > 0) { %>
+            <div class="alert alert-danger"><%= message %></div>
+            <% } %>
+            <h1> <div class="w3-display-container" style="height:50px;">
+                    <div class="w3-display-topleft">Forgot Password ? </div>
+                    <div class="w3-display-topright"><img src="/images/cnd_log_2inch.jpg" class="w3-round" alt="CND"></div></div></h1>
+            <span>Please answer to your secret question to reset password:</span>
+        </div>
+        <div class="content">
+            <label for="username">Email</label>
+            <input name="username" id="username" type="email" value= "<%=username%>" required/>
+            <label for="question">Secret Question:</label>
+            <input  name="question" id="question"  type="text" value= "<%=secretQuestion%>" required/>
+            <label for="answer">Answer</label>
+            <input  class="input username" name="answer" id="answer" type="text" required/>
+
+        </div>
+        <div class="footer">
+            <button type="submit" class="button">Submit</button>
+        </div>
+    </form>
+    <br>
+    <p class="label">Back to login page:<a href="/">Login</a></p>
+</div>
+</body>
+</html>
