@@ -1,0 +1,203 @@
+body {
+    background: #e8e8e8;
+    font: 400 14px/1 Arial, sans-serif;
+    color: #454545;
+}
+body * {
+    box-sizing: border-box;
+}
+body *:focus {
+    outline: 0;
+}
+a {
+    color: #00B7FF;
+}
+
+#form-wrapper {
+    width: 400px;           /* Set this to your convenience */
+    height: 200px;          /* Set this to your convenience */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;     /* Half of height */
+    margin-left: -200px;     /* Half of width */
+}
+
+.header {
+    overflow: auto;
+    background: #d4dedf;
+    border-top: 1px solid #fff;
+    font-family: 'Bree Serif', serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height:14px;
+    color: #678889;
+    text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+    margin-bottom: 5px;
+    text-align: justify;
+}
+.label {
+    font-family: 'Bree Serif', serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #678889;
+    text-shadow: 2px 2px 0 rgba(256,256,256,1.0);
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+.header h1 {
+    padding: 0px 30px 0px 30px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height:34px;
+    color: #678889;
+    text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+    margin-bottom: 10px;
+}
+
+.header span {
+    padding: 0px 30px 0px 30px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #678889;
+    text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+}
+
+.footer {
+
+
+    padding: 10px 30px 10px 30px;
+    overflow: auto;
+
+    background: #d4dedf;
+    border-top: 1px solid #fff;
+
+    box-shadow: inset 0 1px 0 rgba(0,0,0,0.15);
+    -moz-box-shadow: inset 0 1px 0 rgba(0,0,0,0.15);
+    -webkit-box-shadow: inset 0 1px 0 rgba(0,0,0,0.15);
+}
+.footer .button {
+    float:right;
+    padding: 11px 25px;
+
+    font-family: 'Bree Serif', serif;
+    font-size: 18px;
+    color: #fff;
+    text-shadow: 0px 1px 0 rgba(0,0,0,0.25);
+
+    background: #56c2e1;
+    border: 1px solid #46b3d3;
+    border-radius: 5px;
+    cursor: pointer;
+
+    box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
+    -moz-box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
+    -webkit-box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
+    text-decoration: none;
+}
+.footer .button:hover {
+    background: #3f9db8;
+    border: 1px solid rgba(256,256,256,0.75);
+
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+}
+.footer .button:focus {
+    position: relative;
+    bottom: -1px;
+
+    background: #56c2e1;
+
+    box-shadow: inset 0 1px 6px rgba(256,256,256,0.75);
+    -moz-box-shadow: inset 0 1px 6px rgba(256,256,256,0.75);
+    -webkit-box-shadow: inset 0 1px 6px rgba(256,256,256,0.75);
+}
+.alert {
+    padding: 8px 35px 8px 14px;
+    margin-bottom: 18px;
+    color: #c09853;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+
+.alert-heading {
+    color: inherit;
+}
+
+.alert .close {
+    position: relative;
+    top: -2px;
+    right: -21px;
+    line-height: 18px;
+}
+form {
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+
+    background: #f3f3f3;
+    border: 1px solid #fff;
+    border-radius: 5px;
+
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+form label {
+
+    font-family: 'Bree Serif', serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #678889;
+    text-shadow: 2px 2px 0 rgba(256,256,256,1.0);
+    margin-bottom: 5px;
+    text-align: justify;
+
+}
+form input[type="text"] {
+    display: block;
+    height: 36px;
+    margin-bottom: 8px;
+    padding: 0 36px 0 10px;
+    border: 2px solid #cccccc;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+form input[type="email"] {
+    display: block;
+    height: 36px;
+    margin-bottom: 8px;
+    padding: 0 36px 0 10px;
+    border: 2px solid #cccccc;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+form input[type="password"] {
+    display: block;
+    height: 36px;
+    margin-bottom: 8px;
+    padding: 0 36px 0 10px;
+    border: 2px solid #cccccc;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+form ul.helper-text {
+    display: block;
+    margin-top: 6px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #808080;
+}
+form ul.helper-text li.valid {
+    color: #1fd34a;
+}
+form.valid input {
+    border: 2px solid #1fd34a;
+}
+form .content {
+    padding: 0 30px 25px 30px;
+}
